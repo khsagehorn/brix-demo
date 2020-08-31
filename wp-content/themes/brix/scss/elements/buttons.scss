@@ -1,0 +1,68 @@
+a {
+	text-decoration: none;
+	color: $color-primary;
+	transition: color .2s linear;
+}
+a:hover {
+	color: $color-secondary;
+}
+
+.bg-highlight a {
+	color: #fff;
+}
+
+button,
+.button,
+.btn {
+	padding: .25em .5em;
+	margin-right: 1em;
+	border: 2px solid $color-primary;
+	color: $color-secondary;
+	background-color: $color-primary;
+	display: inline-block;
+	text-align: center;
+	transition: color .2s linear, background-color .2s linear;
+	border-radius: 0;
+}
+button:hover,
+.button:hover,
+.btn:hover {
+	background-color: $color-bg;
+	color: $color-primary;
+}
+
+button.secondary,
+.button.secondary,
+.btn.secondary {
+	border-color: $color-secondary;
+	background-color: $color-secondary;
+	color: $color-primary;
+	transition: background-color .2s linear, color .2s linear;
+}
+button.secondary:hover,
+.button.secondary:hover,
+.btn.secondary:hover {
+	background-color: $color-primary;
+	color: #fff;
+}
+
+.btn.alt{
+	color: $color-primary;
+	background-color: #fff;
+	border-color: $color-primary;
+	font-size: 1.25em;
+	&:hover{
+		color: #fff;
+		background-color: $color-primary;
+		border-color: #fff;
+	}
+}
+
+.button-group {
+	justify-content: center;
+	align-items: center;
+	margin: 1em;
+}
+.button-group > * {
+	margin: 1em;
+}

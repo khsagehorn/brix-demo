@@ -1,0 +1,11 @@
+.disruptor-section{
+  background: $color-accent;
+  padding: 10em 0;
+  &.texture{
+    background: linear-gradient(rgba($color-accent, .8), rgba($color-accent, .8)), url('../images/disruptor_bg.jpg');
+    background-size: cover;
+  }
+  .heading{
+    color: $white;
+  }
+}

@@ -1,0 +1,93 @@
+.content-width {
+	width: 100%;
+	max-width: $content-width;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 1em;
+}
+
+.less-wide {
+	width: 80%;
+	max-width: $content-width * $less-wide-factor;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.much-less-wide{
+	width: 90%;
+}
+@media (min-width: 50em){
+	.much-less-wide{
+		width: 60%;
+	}
+}
+
+
+// to account for the left and right padding on .content-width, we need to break after incorporating that padding
+// NOTE: this means $content-width and the math immediately below need to be the same units (see base/_variables.scss)
+@media (min-width: $content-width + 2em){
+	.content-width {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+@media (min-width: $content-width * $more-wide-factor){
+	.wider {
+		max-width: $content-width * $more-wide-factor;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.section {
+	margin-top: 0;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+// Fir when you need to break out of content-width
+body {
+	overflow-x: hidden;
+}
+.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+// .bg-alt {
+// 	background-color: $color-bg-alt;
+// }
+.bg-highlight {
+	background-color: $color-primary;
+	color: #fff;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+.site-main {
+	flex: 1 0 auto;
+	margin-top: 0;
+	// overflow: hidden;
+}
+
+section{
+	margin-top: 0;
+}
+
+.wysiwyg li{
+	list-style-type: disc;
+    list-style-position: inside;
+    font-size: 1.125rem;
+}
+
+br{
+    display: block;
+    margin-top: 1.5em;
+}

@@ -1,0 +1,28 @@
+.floor-plan-section{
+  background: linear-gradient(to right, $color-primary 75vw, $white 75vw);
+  color: $white;
+  .content{
+    .plan-details{
+      color: $color-secondary;
+      font-size: 2rem;
+      margin-top: 1em;
+      &.active{
+        color: $color-accent;
+      }
+    }
+  }
+  .image-container{
+    position: relative;
+    .plan-image{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      opacity: 0;
+      transition: opacity .3s ease;
+      &.active{
+        opacity: 1;
+      }
+    }
+  }
+}

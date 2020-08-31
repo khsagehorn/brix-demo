@@ -1,0 +1,20 @@
+.main-foot{
+  background-color: $color-primary;
+  margin-top: 0;
+  padding: 2em 0;
+  .nav__inner{
+    align-items: center;
+  }
+  .logo{
+    max-width: 12em;
+  }
+  .menu-item{
+    padding: 0 2em;
+    a{
+      color: $color-secondary;
+      &:hover{
+        color: $color-accent;
+      }
+    }
+  }
+}

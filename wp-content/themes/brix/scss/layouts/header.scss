@@ -1,0 +1,38 @@
+.main-head{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: $color-primary;
+  z-index: 99;
+  .callout{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: $color-accent;
+    padding: 1em 2em;
+  }
+  .utility-nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em 2em;
+    align-items: center;
+    .btn{
+      font-family: $bigshot;
+      font-weight: 700;
+    }
+    .phone{
+      color: $color-body;
+    }
+  }
+  .nav{
+    padding-top: 6em;
+    .menu-item a{
+      color: $color-secondary;
+    }
+  }
+  .logo{
+    max-width: 15em;
+    margin-top: auto;
+  }
+}
